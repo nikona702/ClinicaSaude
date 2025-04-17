@@ -1,0 +1,138 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #20afa3;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d4f4f1;
+}
+
+section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#servicos .servico,
+#equipe .equipe-member {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+#servicos img,
+#equipe img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+#inscricao form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inscricao form input, 
+#inscricao form button {
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#inscricao form button {
+    background-color: #20afa3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#inscricao form button:hover {
+    background-color: #17988f;
+}
+
+footer {
+    background-color: #2f2f2f;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 14px;
+}
+    .servicos-container,
+    .equipe-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .servico,
+    .equipe-member {
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        width: 30%;
+        min-width: 250px;
+        max-width: 300px;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    
+    @media (max-width: 768px) {
+        .servico,
+        .equipe-member {
+            width: 100%;
+        }
+    }
+    

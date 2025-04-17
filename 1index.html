@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Saúde Bem-Estar</title>
+    <link rel="stylesheet" href="./styles/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Clínica Saúde Bem-Estar</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Equipe</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="introducao">
+        <h2>Bem-vindo à Clínica Saúde Bem-Estar</h2>
+        <p>Nossa missão é oferecer cuidados de saúde de qualidade com atenção personalizada, garantindo o bem-estar e a saúde dos nossos pacientes.</p>
+    </section>
+
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="servicos-container">
+            <div class="servico">
+                <img src="./styles/components/components/images/COnsulta.jpg" alt="Consulta médica">
+                <h3>Consulta Médica</h3>
+                <p>Consultas de especialidades médicas para todas as idades. Atendimento humano e de qualidade.</p>
+            </div>
+            <div class="servico">
+                <img src="./styles/components/components/images/sjnjvc20FOYVOxMbeWRzXYPDbPnjlj8S0VOhtm9P.jpeg" alt="Exames laboratoriais">
+                <h3>Exames Laboratoriais</h3>
+                <p>Exames rápidos e eficientes para diagnósticos precisos. Garantimos tecnologia e conforto.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="equipe">
+        <h2>Nossa Equipe</h2>
+        <div class="equipe-container">
+            <div class="equipe-member">
+                <img src="./styles/components/components/images/Dr.Carlos.png" alt="Dr. Carlos">
+                <h3>Dr. Carlos de Souza</h3>
+                <p>Clínico Geral</p>
+            </div>
+            <div class="equipe-member">
+                <img src="./styles/components/components/images/Dr.Joao.png" alt="Dr. João">
+                <h3>Dr. João Rodrigues</h3>
+                <p>Nutricionista</p>
+            </div>
+            <div class="equipe-member">
+                <img src="./styles/components/components/images/DraMaria.jpeg" alt="Dra. Maria">
+                <h3>Dra. Maria Barbosa</h3>
+                <p>Fisioterapeuta</p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="inscricao">
+        <h2>Quer Saber Mais? Inscreva-se!</h2>
+        <form id="form-inscricao">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+    
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+    
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("form-inscricao");
+    
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+                alert("Formulário enviado. Obrigado!");
+            });
+        });
+    </script>
+    
+
+    <footer>
+        <p>Telefone: (61) 99482-4712</p>
+        <p>Email: contato@clinicasaude.com</p>
+        <p>Redes sociais: <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+    </footer>
+    <script>
+        document.getElementById("form-inscricao").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Formulário enviado. Obrigado!");
+        });
+    </script>
+<form id="form-inscricao" action="#" method="POST">
+<button type="button">Enviar</button>
